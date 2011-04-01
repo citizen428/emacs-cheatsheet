@@ -1,0 +1,168 @@
+#+STARTUP: indent
+
+* Emacs
+** Help
+   C-h t               Tutorial    
+   C-h m               Help for active mode  
+   C-h k               Help for key sequence  
+   C-h f               Help for function  
+   C-h v               Help for variable  
+   C-h a               Search help  
+   C-h i               Info reader  
+   C-h p               Find help by keyword  
+   M-x man             Manpage reader  
+   q                   Close help buffer  
+** General
+   C-c r               Revert to file on disk  
+   C-g                 Cancel   
+** Movement
+   C-f                 Next character  
+   C-b                 Previous character  
+   M-f                 Next word  
+   M-b                 Previous word  
+   C-a                 Beginning of line  
+   C-e                 End of line  
+   M-a                 Backward sentence
+   M-e                 Forward sentence
+   
+   C-l                 Centers line on screen  
+   
+   C-n                 Next line  
+   C-p                 Previous line  
+   C-v                 Next page  
+   M-v                 Previous page  
+   M-<                 Beginning of document  
+   M->                 End of document  
+   
+   C-M-v               Scroll other window/frame  
+   C-M-f               Move forward by s-expression  
+   C-M-b               Move backward by s-expression  
+   C-M-d               Move down list  
+   C-M-u               Move up list  
+   
+   M-g g               Go to line  
+   M-m                 Back to indentation  
+   M-r                 Cycle top/center/bottom of visible window  
+** Search
+   C-s                 Forward search  
+   C-r                 Backward search  
+   C-s C-w             Add word after point to search  
+** Tags
+   M-.                 Go to symbol definition  
+   M-*                 Return to starting point  
+   M-0 M-.             Go to next matching definition  
+   M-x tag-search      Start a search  
+   M-,                 Go to next match  
+** Frames
+   M-x make-frame      New frame  
+   M-x delete-frame    Close frame  
+** Windows
+   C-x 0               Close window  
+   C-x 1               Make current window only window  
+   C-x 2               Split vertically  
+   C-x 3               Split horizontally  
+   C-x o               Go to next window  
+   Shift+arrow key     Focus in direction  
+   C-x M-f             Open file in new window  
+** Buffers
+   C-x b               Switch buffer  
+   C-x C-b             Buffer list  
+   C-x k               Kill buffer  
+   C-y                 Send buffer to end of buffer list  
+   C-x C-Right         Next buffer  
+   C-x C-Left          Previous buffer  
+** Copy/paste/delete
+   C-SPC               Set mark  
+   C-x h               Select whole buffer  
+   M-h                 Select paragraph  
+   C-w                 Kill region  
+   M-w                 Copy region  
+   C-y                 Paste from kill ring  
+   M-y                 Cycle kill ring  
+   C-k                 Kill text to end of line  
+   C-M-h               Kill previous word  
+   C-u C-SPC           Jump to last mark  
+   C-_                 Undo  
+** File management
+   C-x C-f             Find file  
+   C-x f               Find recent file  
+   C-x s               Save file  
+** Various
+   C-x m               Emacs shell  
+   M-;                 (Un-)Comment region  
+   M-/                 Completion (Hippie Expand)  
+   C-x C-i             Ido function list  
+   C-M \               Reindent region  
+   C-c n               Cleanup whitespace in ws mode  
+   C-|                 Shell command on region  
+   C-u C-|             Like above, replace selection  
+   C-u C-Spc           Pop mark  
+** Evaluate Elisp code
+   C-c v               Evaluate buffer  
+   C-x C-e             Evaluate last sexp  
+* Ruby mode
+  C-c C-s             Start inf-ruby  
+  C-C C-r             Send region to inf-ruby  
+  C-h r               Search docs  
+  C-x t               Run Ruby file  
+* Column mode
+  M-x cua-mode        Start column mode  
+  C-Enter             Selecting in column mode  
+* Org-mode
+  M-Shift-Ret         Insert TODO item  
+  C-c C-t             Mark TODO as done  
+  C-c C-o             Open link  
+  C-c l               Store link  
+  C-c C-l             Paste link  
+  C-c C-s             Schedule task  
+  Shift-Tab           Document overview  
+* Magit
+** Status buffer
+C-x g               Magit status
+d                   Show diff to anoter revision
+x                   Resets to given revision
+w                   Show wazzup
+R                   Rebase
+R c                 Continue rebase
+P p                 Push
+f f                 Update remote
+F p                 Pull
+** Unstaged files
+g                   Refresh status buffer
+s                   Stage fike
+i                   Add to .gitingore
+k                   Delete untracked file forever
+** Staging and commiting
+u                   Unstage file
+S                   Stage all hunks
+U                   Unstage all hunks
+k                   Discard uncommitted changes
+c                   Write commit message
+C-c C-c             Commit
+C-c C-a             Toggle amend
+** History
+l l                 Show repository history
+l L                 Verbose history
+a                   Apply commit to current branch
+A                   Cherry-pick commit
+v                   Revert commit
+C-w                 Copy SHA1 to kill ring
+=                   Diff current commit and marked commit
+.                   Mark/unmark commit
+C-u .               Unmark no matter where point is
+** Stashing
+z z                 Create new stash
+a                   Apply stash
+A                   Pop stash
+k                   Kill stash
+** Branching
+b c                 Change branch
+b B                 Create branch and switch to it
+b V                 List local and remote branches
+** Branch list
+k                   Delete branch
+C-u k               Delete even if unmerged
+m m                 Manual merge
+RET                 Check out branch
+
+
